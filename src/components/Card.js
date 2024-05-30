@@ -7,6 +7,11 @@ import MuiStack from '@mui/material/Stack'
 import MuiTypography from '@mui/material/Typography'
 import Bg from "../assest/image/BG.jpg"
 import Profile from "../assest/image/Profile.jpg"
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import Box from '@mui/material/Box'
 
 
 
@@ -38,7 +43,7 @@ const ProfileCardComponent = ({name}) => {
                         position: 'relative',
                         width: '50px',
                         height: '50px',
-                        margin: '8em auto 0 auto', /* 8em top margin, 0 for other margins, auto for horizontal centering */
+                        margin: '8em auto 0 auto', 
                         borderRadius: '100%',
                         border: '4px solid transparent',
                         borderColor: 'background.paper',
@@ -60,6 +65,13 @@ const ProfileCardComponent = ({name}) => {
                 <MuiTypography variant="subtitle1" color="text.secondary" textAlign="center" gutterBottom>
                     HR manger
                 </MuiTypography>
+                <Box sx={{margin:"1em"}}>
+                <FacebookIcon/>
+                <InstagramIcon/>
+                <LinkedInIcon/>
+                <TwitterIcon/>
+                </Box>
+               
                 <MuiDivider sx={{borderStyle:'dashed'}} />
                 <MuiStack direction="row" justifyContent="space-around" alignItems="center" spacing={2}>
                     <MuiBox sx={{ textAlign: 'center' }}>
