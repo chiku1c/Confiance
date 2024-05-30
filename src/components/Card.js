@@ -34,7 +34,7 @@ const ProfileCardComponent = ({ name }) => {
                         position: 'relative',
                         width: '50px',
                         height: '50px',
-                        margin: '8em auto 0 auto', /* 8em top margin, 0 for other margins, auto for horizontal centering */
+                        margin: '8em auto 0 auto', 
                         borderRadius: '100%',
                         border: '4px solid transparent',
                         borderColor: 'background.paper',
