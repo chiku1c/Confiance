@@ -2,6 +2,7 @@ import MuiBox from '@mui/material/Box'
 import MuiCard from '@mui/material/Card'
 import MuiCardContent from '@mui/material/CardContent'
 import MuiCardMedia from '@mui/material/CardMedia'
+import MuiDivider from '@mui/material/Divider'
 import MuiStack from '@mui/material/Stack'
 import MuiTypography from '@mui/material/Typography'
 import Bg from "../assest/image/BG.jpg"
@@ -9,8 +10,11 @@ import Profile from "../assest/image/Profile.jpg"
 
 
 
-const ProfileCardComponent = ({ name }) => {
+const ProfileCardComponent = ({name}) => {
     return (
+
+
+
         <><MuiCard
             sx={{
                 width: 320,
@@ -34,7 +38,7 @@ const ProfileCardComponent = ({ name }) => {
                         position: 'relative',
                         width: '50px',
                         height: '50px',
-                        margin: '8em auto 0 auto', 
+                        margin: '8em auto 0 auto', /* 8em top margin, 0 for other margins, auto for horizontal centering */
                         borderRadius: '100%',
                         border: '4px solid transparent',
                         borderColor: 'background.paper',
@@ -43,16 +47,23 @@ const ProfileCardComponent = ({ name }) => {
                     image={Profile}
                 />
                 <MuiTypography
+
+
                     variant="h6" component="h1" color="text.primary" textAlign="center" sx={{
+
                         fontWeight: 700,
+
+
                     }} gutterBottom>
                     Jayvion Simon
                 </MuiTypography>
                 <MuiTypography variant="subtitle1" color="text.secondary" textAlign="center" gutterBottom>
                     HR manger
                 </MuiTypography>
+                <MuiDivider sx={{borderStyle:'dashed'}} />
                 <MuiStack direction="row" justifyContent="space-around" alignItems="center" spacing={2}>
                     <MuiBox sx={{ textAlign: 'center' }}>
+                       
                         <MuiTypography variant="caption" color="text.secondary">
                             Following
                         </MuiTypography>
@@ -60,7 +71,9 @@ const ProfileCardComponent = ({ name }) => {
                             80K
                         </MuiTypography>
                     </MuiBox>
+
                     <MuiBox sx={{ textAlign: 'center' }}>
+                        
                         <MuiTypography variant="caption" color="text.secondary">
                             Followers
                         </MuiTypography>
@@ -68,7 +81,9 @@ const ProfileCardComponent = ({ name }) => {
                             803K
                         </MuiTypography>
                     </MuiBox>
+
                     <MuiBox sx={{ textAlign: 'center' }}>
+                        
                         <MuiTypography variant="caption" color="text.secondary">
                             total Post
                         </MuiTypography>
